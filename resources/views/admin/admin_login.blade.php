@@ -47,7 +47,8 @@
                             </a>
                         </div>
                         <div class="login-form">
-                            <form action="" method="post">
+                            <form action="{{url('/admin-dashboard')}}" method="post">
+                            @csrf
                                 <div class="form-group">
                                     <label>Email Address</label>
                                     <input class="au-input au-input--full" type="admin_email" name="email" placeholder="Email">
